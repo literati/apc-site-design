@@ -1,4 +1,3 @@
-<h5>SOME WORDS WITH A MUMMY.</h5>
 <p>
 	THE <i>symposium</i>
 	of the preceding evening had been a little too much

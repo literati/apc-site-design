@@ -11,11 +11,8 @@
 
 <head>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <link rel="stylesheet" href="colorbox/colorbox.css" />
-
-    
+    <link rel="stylesheet" href="colorbox/colorbox.css" />
 
     <meta charset="utf-8" />
 
@@ -34,83 +31,58 @@
     <!-- Custom Modernizr for Foundation -->
     <script src="js/modernizr.foundation.js"></script>
 
-<script type="text/javascript">
-    $(window).scroll(function() {
-      $('.whiteout').css('top', $(this).scrollTop()-75 + "px");
-      $('.whiteout').css('position', 'relative');
-      if($(this).scrollTop() < 100){
-        $('.whiteout').css('position', 'static');
-      }
-    });
-</script>
+    <!-- Move Story Window with Scroll --> 
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        $('.story').css('top', $(this).scrollTop()-100 + "px");
+        $('.story').css('position', 'relative');
+        if($(this).scrollTop() < 100){
+          $('.story').css('position', 'static');
+        }
+      });
+    </script>
+
+    <!-- TimelineJS -->        
+    <script type="text/javascript" src="js/storyjs-embed.js"></script>
+        <script>
+            $(document).ready(function() {
+                createStoryJS({
+                    type:       'timeline',
+                    width:      '100%',
+                    height:     '500',
+                    source:     'http://literati.cct.lsu.edu/omeka/rest/timeline/find?tale=mummy&output=omeka-json&callback=Storyjs_jsonp_data',
+                    embed_id:   'my-timeline',
+                    debug:      true,
+                    start_at_slide:     '3',                            //OPTIONAL START AT SPECIFIC SLIDE
+                    start_zoom_adjust:  '3'                           //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
+                });
+            });
+        </script>
 
 </head>
 
 <body>
 
-
     <!-- Header and Nav -->
-    <div class="row">
-      <div class="twelve columns">
-        <nav class="top-bar contain-to-grid">
-          <ul>
-            <li class="name">
-              <h1>
-                <a href="index.php">ANTEBELLUM PRINT CULUTRE</a>
-              </h1>
-            </li>
-            <li class="toggle-topbar">
-              <a href="#"></a>
-            </li>
-          </ul>
-          <section>
-            <ul class="right">
-              <li class="has-dropdown">
-                <a href="#">READ</a>
-                <ul class="dropdown">
-                  <li>
-                    <a class='iframe' href="readmummy.php">Some Words with a Mummy</a>
-                  </li>
-                  <li>
-                    <a href="readbox.php">The Oblong Box</a>
-                  </li>
-                  <li>
-                    <a href="readmountains.php">A Tale of the Ragged Mountains</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="has-dropdown">
-                <a href="#">EXPLORE</a>
-                <ul class="dropdown">
-                  <li>
-                    <a href="exploremummy.php">Some Words with a Mummy</a>
-                  </li>
-                  <li>
-                    <a href="explorebox.php">The Oblong Box</a>
-                  </li>
-                  <li>
-                    <a href="exploremountains.php">A Tale of the Ragged Mountains</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-        </nav>
-      </div>
-
-    </div>
+    <?php include "components/header.php"; ?>
 
     <!-- One Big Row  -->
     <div class="row big">
 
       <!-- The Story  -->
-
       <div class="six columns">
-        <div class="panel whiteout radius">
+        <div class="panel whiteout radius storytitle">
+          <h5>SOME WORDS WITH A MUMMY</h5>
+          <a class="tiny button iframe" href="readmummy.php">Reading Mode</a>
+        </div>
+        <div class="panel whiteout story radius">
           <?php include "stories/mummy.txt"; ?></div>
       </div>
+
+      <!-- Meta Information -->
       <div class="six columns measureme">
 
+        <!-- Dubline Core -->
         <ul class="accordion">
           <li class="active">
             <div class="title">
@@ -127,26 +99,47 @@
           </li>
         </ul>
 
+                <!-- Timeline -->
         <ul class="accordion">
           <li>
             <div class="title">
               <h5>Timeline</h5>
             </div>
             <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+            <iframe src="timeline/timeline.php" 
+                    width="100%" 
+                    height="520px"
+                    seamless
+                    scrolling="no"
+                    frameborder="0">
+            </iframe>
             </div>
           </li>
         </ul>
 
+        <!-- Map -->
         <ul class="accordion">
           <li>
             <div class="title">
               <h5>Map</h5>
+            </div>
+            <div class="content">
+            <iframe src="timeline/timeline.php" 
+                    width="100%" 
+                    height="520px"
+                    seamless
+                    scrolling="no"
+                    frameborder="0">
+            </iframe>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Media -->
+        <ul class="accordion">
+          <li>
+            <div class="title">
+              <h5>Media</h5>
             </div>
             <div class="content">
               <p>
@@ -158,54 +151,16 @@
             </div>
           </li>
         </ul>
+
       </div>
+
     </div>
 
     <!-- Story Navigation -->
-    <div class="row storynav">
-      <div class="twelve columns">
-        <div class="panel">
-          <h5>EDGAR ALLAN POE</h5>
-          <div class="panel callout radius">
-            <table class="twelve">
-              <tr>
-                <td>
-                  <a href="exploremummy.php">
-                    <img src="images/mummy.svg" alt="mummy" width="50"/>
-                  </a>
-                </td>
-                <td>
-                   <a href="explorebox.php">
-                  <img src="images/box.svg" alt="box" width="50"/>
-                  </a>
-                </td>
-                <td>
-                   <a href="exploremounts.php">
-                  <img src="images/mounts.svg" alt="mountains" width="50"/>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a class="button" href="exploremummy.php">Some Words with a Mummy</a>
-                </td>
-                <td>
-                  <a class="button" href="exploremummy.php">The Oblong Box</a>
-                </td>
-                <td>
-                  <a class="button" href="exploremummy.php">A Tale of the Ragged Mountains</a>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php include "components/storynav.php"; ?>
 
     <!-- Footer -->
-    <footer class="row">
-
-    </footer>
+    <footer class="row"></footer>
 
     <div class="bottomImg"></div>
 

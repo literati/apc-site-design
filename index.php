@@ -17,6 +17,10 @@
 
     <title>Antebellum Print Culture</title>
 
+    <!-- Colorbox.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="colorbox/colorbox.css" />
+
     <!-- Included CSS Files, use foundation.css if you do not want minified code -->
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
@@ -27,8 +31,7 @@
     <!-- Custom Modernizr for Foundation -->
     <script src="js/modernizr.foundation.js"></script>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <!-- BEGIN TimelineJS -->
+    <!-- TimelineJS -->
     <script type="text/javascript" src="js/storyjs-embed.js"></script>
     <script>
             $(document).ready(function() {
@@ -41,123 +44,40 @@
                     debug:      true
                 });
             });
-        </script>
+    </script>
 
 </head>
 
 <body>
-    <div id="container">
 
-      <!-- Header and Nav -->
-      <div class="row">
-        <div class="twelve columns">
-          <nav class="top-bar contain-to-grid">
-            <ul>
-              <li class="name">
-                <h1>
-                  <a href="index.php">ANTEBELLUM PRINT CULUTRE</a>
-                </h1>
-              </li>
-              <li class="toggle-topbar">
-                <a href="#"></a>
-              </li>
-            </ul>
-            <section>
-              <ul class="right">
-                <li class="has-dropdown">
-                  <a href="#">READ</a>
-                  <ul class="dropdown">
-                    <li>
-                      <a href="readmummy.php">Some Words with a Mummy</a>
-                    </li>
-                    <li>
-                      <a href="readbox.html">The Oblong Box</a>
-                    </li>
-                    <li>
-                      <a href="readmountains.html">A Tale of the Ragged Mountains</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="has-dropdown">
-                  <a href="#">EXPLORE</a>
-                  <ul class="dropdown">
-                    <li>
-                      <a href="exploremummy.php">Some Words with a Mummy</a>
-                    </li>
-                    <li>
-                      <a href="explorebox.html">The Oblong Box</a>
-                    </li>
-                    <li>
-                      <a href="exploremountains.html">A Tale of the Ragged Mountains</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
-          </nav>
-        </div>
+    <!-- Header and Nav -->
+    <?php include "components/header.php"; ?>
 
-      </div>
+    <!-- Two-up Content Blocks  -->
+    <div class="row">
 
-      <!-- Two-up Content Blocks  -->
-      <div class="row">
-        
-        <div class="eight columns">
-          <div class="panel">
-            <h5>TIMELINE</h5>
-            <div id="my-timeline"></div>
-          </div>
-        </div>
-
-        <div class="four columns">
-          <div class="panel">
-            <h5>ABOUT</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+      <div class="eight columns">
+        <div class="panel">
+          <h5>TIMELINE</h5>
+          <div id="my-timeline"></div>
         </div>
       </div>
 
-      <!-- Sotry Navigation -->
-      <div class="row">
-        <div class="twelve columns">
-          <div class="panel">
-            <h5>EDGAR ALLAN POE</h5>
-            <div class="panel callout radius">
-              <table class="twelve">
-                <tr>
-                  <td>
-                    <a href="exploremummy.php"><img src="images/mummy.svg" alt="mummy" width="50"/></a>
-                  </td>
-                  <td>
-                    <img src="images/box.svg" alt="box" width="50"/>
-                  </td>
-                  <td>
-                    <img src="images/mounts.svg" alt="mountains" width="50"/>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a class="button" href="mummy.php">Some Words with a Mummy</a>
-                  </td>
-                  <td>
-                    <a class="button" href="#">The Oblong Box</a>
-                  </td>
-                  <td>
-                    <a class="button" href="#">A Tale of the Ragged Mountains</a>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
+      <div class="four columns">
+        <div class="panel">
+          <h5>ABOUT</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
       </div>
-
-      <!-- Footer -->
-      <footer class="row"></footer>
-
     </div>
+
+    <!-- Story Navigation -->
+    <?php include "components/storynav.php"; ?>
+
+    <!-- Footer -->
+    <footer class="row"></footer>
 
     <div class="bottomImg"></div>
 
@@ -173,6 +93,13 @@
 
     <!-- Initialize JS Plugins -->
     <script src="js/app.js"></script>
+
+    <script src="colorbox/jquery.colorbox.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+      });
+    </script>
 
 </body>
   </html>
