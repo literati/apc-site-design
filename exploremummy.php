@@ -11,6 +11,7 @@
 
 <head>
 
+    <!-- Colorbox for Reading View -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <link rel="stylesheet" href="colorbox/colorbox.css" />
 
@@ -31,7 +32,7 @@
     <!-- Custom Modernizr for Foundation -->
     <script src="js/modernizr.foundation.js"></script>
 
-    <!-- Move Story Window with Scroll --> 
+    <!-- Move Story Window with Scroll -->
     <script type="text/javascript">
       $(window).scroll(function() {
         $('.story').css('top', $(this).scrollTop()-100 + "px");
@@ -42,9 +43,9 @@
       });
     </script>
 
-    <!-- TimelineJS -->        
+    <!-- TimelineJS -->
     <script type="text/javascript" src="js/storyjs-embed.js"></script>
-        <script>
+    <script>
             $(document).ready(function() {
                 createStoryJS({
                     type:       'timeline',
@@ -86,11 +87,11 @@
         <ul class="accordion">
           <li class="active">
             <div class="title">
-              <h5>Dublin Core</h5>
+              <h5>Document Overview</h5>
             </div>
             <div class="content">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Dublin Core... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -99,20 +100,19 @@
           </li>
         </ul>
 
-                <!-- Timeline -->
+        <!-- Timeline -->
         <ul class="accordion">
           <li>
             <div class="title">
               <h5>Timeline</h5>
             </div>
             <div class="content">
-            <iframe src="timeline/timeline.php" 
+              <iframe src="timeline/timeline.php" 
                     width="100%" 
                     height="520px"
                     seamless
                     scrolling="no"
-                    frameborder="0">
-            </iframe>
+                    frameborder="0"></iframe>
             </div>
           </li>
         </ul>
@@ -124,13 +124,13 @@
               <h5>Map</h5>
             </div>
             <div class="content">
-            <iframe src="timeline/timeline.php" 
+                <iframe src="map/map.php" 
                     width="100%" 
                     height="520px"
                     seamless
                     scrolling="no"
-                    frameborder="0">
-            </iframe>
+                    frameborder="0"></iframe>
+            
             </div>
           </li>
         </ul>
@@ -177,6 +177,7 @@
     <!-- Initialize JS Plugins -->
     <script src="js/app.js"></script>
 
+    <!-- Colorbox -->
     <script src="colorbox/jquery.colorbox.js"></script>
     <script>
       $(document).ready(function(){
