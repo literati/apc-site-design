@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en">
+  <![endif]-->
+  <!--[if gt IE 8]>
+  <!-->
+  <html class="no-js" lang="en">
+    <!--<![endif]-->
+
+<head>
+
+    <!-- Colorbox for Reading View -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="colorbox/colorbox.css" />
+
+    <meta charset="utf-8" />
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Antebellum Print Culture</title>
+
+    <!-- Included CSS Files, use foundation.css if you do not want minified code -->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Load fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Abel|Alice' rel='stylesheet' type='text/css'>
+
+    <!-- Custom Modernizr for Foundation -->
+    <script src="js/modernizr.foundation.js"></script>
+
+    <!-- Move Story Window with Scroll -->
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        $('.story').css('top', $(this).scrollTop()-100 + "px");
+        $('.story').css('position', 'relative');
+        if($(this).scrollTop() < 100){
+          $('.story').css('position', 'static');
+        }
+      });
+    </script>
+
+    <!-- TimelineJS -->
+    <script type="text/javascript" src="js/storyjs-embed.js"></script>
+    <script>
+            $(document).ready(function() {
+                createStoryJS({
+                    type:       'timeline',
+                    width:      '100%',
+                    height:     '500',
+                    source:     'http://literati.cct.lsu.edu/omeka/rest/timeline/find?tale=mummy&output=omeka-json&callback=Storyjs_jsonp_data',
+                    embed_id:   'my-timeline',
+                    debug:      true,
+                    start_at_slide:     '3',
+                    start_zoom_adjust:  '3' 
+                });
+            });
+        </script>
+
+</head>
+
+<body>
+
+    <!-- BEGIN Header -->
+    <div class="row">
+      <div class="twelve columns">
+        <?php include "components/header.php"; ?></div>
+    </div>
+    <!-- END Header -->
+
+    <!-- One Big Row  -->
+    <div class="row big">
+
+      <!-- The Story  -->
+      <div class="six columns">
+        <div class="panel whiteout radius storytitle">
+          <h5>A TALE OF THE RAGGED MOUNTAINS</h5>
+          <a class="tiny button iframe" href="readmountains.php">Reading Mode</a>
+        </div>
+        <div class="panel whiteout story radius">
+          <?php include "stories/mountains.txt"; ?></div>
+      </div>
+
+      <!-- Meta Information -->
+      <div class="six columns metainfo">
+
+        <!-- Document Overview -->
+        <ul class="accordion">
+          <li class="active">
+            <div class="title">
+              <h5>Document Overview</h5>
+            </div>
+            <div class="content">
+              <ul class="panel callout radius whiteout">
+                <li>Title</li>
+                <ul><li>A Tale of the Ragged Mountains</li></ul>
+                <li>Description</li>
+                <ul><li>"A Tale of the Ragged Mountains" is a short story written by Edgar Allan Poe partially based on his experiences while a student at the University of Virginia. Set near Charlottesville, it is the only one of Poe's stories to take place in Virginia. It was first published in Godey's Lady's Book in 1844 and was included in Poe's short story collection Tales, published in New York by Wiley and Putnam in 1845.</li></ul>
+                <li>Creator</li>
+                <ul><li>Edgar Allan Poe</li></ul>
+                <li>Publisher</li>
+                <ul><li>Louis Antoine Godey</li></ul>
+                <li>Date</li>
+                <ul><li>1844</li></ul>
+                <li>Language</li>
+                <ul><li>English</li></ul>
+                <li>Type</li>
+                <ul><li>Short Story</li></ul>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Timeline -->
+        <ul class="accordion">
+          <li class="active">
+            <div class="title">
+              <h5>Timeline</h5>
+            </div>
+            <div class="content">
+              <iframe class="timeIF" src="timeline/timeline.php"></iframe>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Map -->
+        <ul class="accordion">
+          <li class="active">
+            <div class="title">
+              <h5>Map</h5>
+            </div>
+            <div class="content">
+              <iframe class="mapIF" src="map/map.php"></iframe>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <!-- BEGIN Story Navigation -->
+    <div class="row storynav">
+      <div class="twelve columns">
+        <?php include "components/storynav.php"; ?></div>
+    </div>
+    <!-- END Story Navigation -->
+
+    <div class="bottomImg"></div>
+
+    <!-- Latest version of jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Included JS Files (Unminified) -->
+    <!-- [JS Files] -->
+    <!-- We include all the unminified JS as well. Uncomment to use them instead -->
+
+    <!-- Included JS Files (Minified) -->
+    <script src="js/foundation.min.js"></script>
+
+    <!-- Initialize JS Plugins -->
+    <script src="js/app.js"></script>
+
+    <!-- Colorbox -->
+    <script src="colorbox/jquery.colorbox.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+      });
+    </script>
+
+</body>
+  </html>

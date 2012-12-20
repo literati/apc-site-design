@@ -28,10 +28,10 @@
               <a class="button" href="exploremummy.php">Some Words with a Mummy</a>
             </td>
             <td>
-              <a class="button" href="exploremummy.php">The Oblong Box</a>
+              <a class="button" href="explorebox.php">The Oblong Box</a>
             </td>
             <td>
-              <a class="button" href="exploremummy.php">A Tale of the Ragged Mountains</a>
+              <a class="button" href="exploremountains.php">A Tale of the Ragged Mountains</a>
             </td>
           </tr>
         </table>

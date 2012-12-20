@@ -36,10 +36,10 @@
                 <a href="exploremummy.php">Some Words with a Mummy</a>
               </li>
               <li>
-                <a href="explorebox.html">The Oblong Box</a>
+                <a href="explorebox.php">The Oblong Box</a>
               </li>
               <li>
-                <a href="exploremountains.html">A Tale of the Ragged Mountains</a>
+                <a href="exploremountains.php">A Tale of the Ragged Mountains</a>
               </li>
             </ul>
           </li>
