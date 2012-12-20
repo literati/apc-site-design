@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head><title>asdf</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+var json = (function () {
+    var json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': "mapdata.json",
+        'dataType': "json",
+        'success': function (data) {
+            json = data;
+        }
+    });
+    return json;
+})(); 
+
+console.log(json);
+</script>
+
+</body>
+</html>

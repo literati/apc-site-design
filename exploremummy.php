@@ -94,19 +94,29 @@
               <h5>Document Overview</h5>
             </div>
             <div class="content">
-              <p>
-                Dublin Core... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              <ul class="panel callout radius whiteout">
+                <li>Title</li>
+                <ul><li>Some Words with A Mummy</li></ul>
+                <li>Description</li>
+                <ul><li>"Some Words with a Mummy" is a short story by Edgar Allan Poe. It was first published in American Review: A Whig Journal in April 1845. It is a satire and criticism of the popularity of mummies and science that was occurring at the time.</li></ul>
+                <li>Creator</li>
+                <ul><li>Edgar Allan Poe</li></ul>
+                <li>Publisher</li>
+                <ul><li>American Review: A Whig Journal</li></ul>
+                <li>Date</li>
+                <ul><li>April 1845</li></ul>
+                <li>Language</li>
+                <ul><li>English</li></ul>
+                <li>Type</li>
+                <ul><li>Short Story</li></ul>
+              </ul>
             </div>
           </li>
         </ul>
 
         <!-- Timeline -->
         <ul class="accordion">
-          <li>
+          <li class="active">
             <div class="title">
               <h5>Timeline</h5>
             </div>
@@ -118,7 +128,7 @@
 
         <!-- Map -->
         <ul class="accordion">
-          <li>
+          <li class="active">
             <div class="title">
               <h5>Map</h5>
             </div>

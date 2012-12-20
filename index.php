@@ -58,52 +58,54 @@
     <!-- END Header -->
 
     <!-- BEGIN Page Content  -->
+
     <div class="row">
-      <div class="eight columns">
+      <div class="twelve columns">
+        <div class="panel">
+          <h5>ABOUT</h5>
+          <p>
+            <?php include "components/about.txt" ?></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
         <div class="panel">
           <h5>TIMELINE</h5>
           <div id="my-timeline"></div>
         </div>
       </div>
+    </div>
 
-      <div class="four columns">
-        <div class="panel">
-          <h5>ABOUT</h5>
-          <p>
-            <?php include "components/about.txt" ?>
-          </p>
-          </div>
-        </div>
-      </div>
-      <!-- END Page Content  -->
+    <!-- END Page Content  -->
 
-      <!-- BEGIN Story Navigation -->
-      <div class="row storynav">
-        <div class="twelve columns">
-          <?php include "components/storynav.php"; ?>
-        </div>
-      </div>
-      <!-- END Story Navigation -->
+    <!-- BEGIN Story Navigation -->
+    <div class="row storynav">
+      <div class="twelve columns">
+        <?php include "components/storynav.php"; ?></div>
+    </div>
+    <!-- END Story Navigation -->
 
-      <div class="bottomImg"></div>
+    <div class="bottomImg"></div>
 
-      <!-- Latest version of jQuery -->
-      <script src="js/jquery.js"></script>
+    <!-- Latest version of jQuery -->
+    <script src="js/jquery.js"></script>
 
-      <!-- Included JS Files (Minified) -->
-      <script src="js/foundation.min.js"></script>
+    <!-- Included JS Files (Minified) -->
+    <script src="js/foundation.min.js"></script>
 
-      <!-- Initialize JS Plugins -->
-      <script src="js/app.js"></script>
+    <!-- Initialize JS Plugins -->
+    <script src="js/app.js"></script>
 
-      <!-- BEGIN Colorbox Script -->
-      <script src="colorbox/jquery.colorbox.js"></script>
-      <script>
+    <!-- BEGIN Colorbox Script -->
+    <script src="colorbox/jquery.colorbox.js"></script>
+    <script>
       $(document).ready(function(){
         $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
       });
      </script>
-      <!-- END Colorbox Script -->
+    <!-- END Colorbox Script -->
 
 </body>
-    </html>
+  </html>
