@@ -97,7 +97,6 @@ var data = [
 
 <script type="text/javascript">
 var dataset = new recline.Model.Dataset({
-	url: '',
   	records: data
 });
 </script>

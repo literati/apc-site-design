@@ -1,5 +1,4 @@
-<div class="row">
-  <div class="twelve columns">
+
     <nav class="top-bar contain-to-grid">
       <ul>
         <li class="name">
@@ -47,5 +46,3 @@
         </ul>
       </section>
     </nav>
-  </div>
-</div>

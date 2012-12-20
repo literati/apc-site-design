@@ -109,6 +109,25 @@ color:white;
 }
 
 #map { height: 180px; }
+
+.mapIF{
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	height: 520px;
+}
+
+.timeIF {
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	height: 520px;
+}
+
+.metainfo {
+}
     
 
 /* -----------------------------------------

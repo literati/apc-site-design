@@ -54,8 +54,8 @@
                     source:     'http://literati.cct.lsu.edu/omeka/rest/timeline/find?tale=mummy&output=omeka-json&callback=Storyjs_jsonp_data',
                     embed_id:   'my-timeline',
                     debug:      true,
-                    start_at_slide:     '3',                            //OPTIONAL START AT SPECIFIC SLIDE
-                    start_zoom_adjust:  '3'                           //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
+                    start_at_slide:     '3',
+                    start_zoom_adjust:  '3' 
                 });
             });
         </script>
@@ -64,8 +64,12 @@
 
 <body>
 
-    <!-- Header and Nav -->
-    <?php include "components/header.php"; ?>
+    <!-- BEGIN Header -->
+    <div class="row">
+      <div class="twelve columns">
+        <?php include "components/header.php"; ?></div>
+    </div>
+    <!-- END Header -->
 
     <!-- One Big Row  -->
     <div class="row big">
@@ -81,9 +85,9 @@
       </div>
 
       <!-- Meta Information -->
-      <div class="six columns measureme">
+      <div class="six columns metainfo">
 
-        <!-- Dubline Core -->
+        <!-- Document Overview -->
         <ul class="accordion">
           <li class="active">
             <div class="title">
@@ -107,12 +111,7 @@
               <h5>Timeline</h5>
             </div>
             <div class="content">
-              <iframe src="timeline/timeline.php" 
-                    width="100%" 
-                    height="520px"
-                    seamless
-                    scrolling="no"
-                    frameborder="0"></iframe>
+              <iframe class="timeIF" src="timeline/timeline.php"></iframe>
             </div>
           </li>
         </ul>
@@ -124,30 +123,7 @@
               <h5>Map</h5>
             </div>
             <div class="content">
-                <iframe src="map/map.php" 
-                    width="100%" 
-                    height="520px"
-                    seamless
-                    scrolling="no"
-                    frameborder="0"></iframe>
-            
-            </div>
-          </li>
-        </ul>
-
-        <!-- Media -->
-        <ul class="accordion">
-          <li>
-            <div class="title">
-              <h5>Media</h5>
-            </div>
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              <iframe class="mapIF" src="map/map.php"></iframe>
             </div>
           </li>
         </ul>
@@ -156,11 +132,12 @@
 
     </div>
 
-    <!-- Story Navigation -->
-    <?php include "components/storynav.php"; ?>
-
-    <!-- Footer -->
-    <footer class="row"></footer>
+    <!-- BEGIN Story Navigation -->
+    <div class="row storynav">
+      <div class="twelve columns">
+        <?php include "components/storynav.php"; ?></div>
+    </div>
+    <!-- END Story Navigation -->
 
     <div class="bottomImg"></div>
 

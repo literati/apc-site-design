@@ -41,7 +41,7 @@
                     height:     '400',
                     source:     'http://literati.cct.lsu.edu/omeka/rest/timeline/find?tale=mummy&output=omeka-json&callback=Storyjs_jsonp_data',
                     embed_id:   'my-timeline',
-                    debug:      true
+                    debug:      false
                 });
             });
     </script>
@@ -50,12 +50,15 @@
 
 <body>
 
-    <!-- Header and Nav -->
-    <?php include "components/header.php"; ?>
-
-    <!-- Two-up Content Blocks  -->
+    <!-- BEGIN Header -->
     <div class="row">
+      <div class="twelve columns">
+        <?php include "components/header.php"; ?></div>
+    </div>
+    <!-- END Header -->
 
+    <!-- BEGIN Page Content  -->
+    <div class="row">
       <div class="eight columns">
         <div class="panel">
           <h5>TIMELINE</h5>
@@ -67,39 +70,40 @@
         <div class="panel">
           <h5>ABOUT</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <?php include "components/about.txt" ?>
           </p>
+          </div>
         </div>
       </div>
-    </div>
+      <!-- END Page Content  -->
 
-    <!-- Story Navigation -->
-    <?php include "components/storynav.php"; ?>
+      <!-- BEGIN Story Navigation -->
+      <div class="row storynav">
+        <div class="twelve columns">
+          <?php include "components/storynav.php"; ?>
+        </div>
+      </div>
+      <!-- END Story Navigation -->
 
-    <!-- Footer -->
-    <footer class="row"></footer>
+      <div class="bottomImg"></div>
 
-    <div class="bottomImg"></div>
+      <!-- Latest version of jQuery -->
+      <script src="js/jquery.js"></script>
 
-    <!-- Latest version of jQuery -->
-    <script src="js/jquery.js"></script>
+      <!-- Included JS Files (Minified) -->
+      <script src="js/foundation.min.js"></script>
 
-    <!-- Included JS Files (Unminified) -->
-    <!-- [JS Files] -->
-    <!-- We include all the unminified JS as well. Uncomment to use them instead -->
+      <!-- Initialize JS Plugins -->
+      <script src="js/app.js"></script>
 
-    <!-- Included JS Files (Minified) -->
-    <script src="js/foundation.min.js"></script>
-
-    <!-- Initialize JS Plugins -->
-    <script src="js/app.js"></script>
-
-    <script src="colorbox/jquery.colorbox.js"></script>
-    <script>
+      <!-- BEGIN Colorbox Script -->
+      <script src="colorbox/jquery.colorbox.js"></script>
+      <script>
       $(document).ready(function(){
         $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
       });
-    </script>
+     </script>
+      <!-- END Colorbox Script -->
 
 </body>
-  </html>
+    </html>

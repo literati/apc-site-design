@@ -27,7 +27,7 @@
                     height:     '500',
                     source:     'http://literati.cct.lsu.edu/omeka/rest/timeline/find?tale=mummy&output=omeka-json&callback=Storyjs_jsonp_data',
                     embed_id:   'my-timeline',
-                    debug:      true,
+                    debug:      false,
                     start_at_slide:     '3',                            //OPTIONAL START AT SPECIFIC SLIDE
                     start_zoom_adjust:  '3'                           //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
                 });
