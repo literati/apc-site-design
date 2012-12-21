@@ -91,7 +91,7 @@ var data = (function () {
     $.ajax({
         'async': false,
         'global': false,
-        'url': "../mapdata.json",
+        'url': "http://literati.cct.lsu.edu/omeka/rest/fetch/map?tale=mummy&output=json",
         'dataType': "json",
         'success': function (data) {
             json = data;
