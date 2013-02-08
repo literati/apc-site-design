@@ -30,7 +30,7 @@
             </ul>
           </li>
           <li class="has-dropdown">
-            <a href="#">STORIES</a>
+            <a href="#">TALES</a>
             <ul class="dropdown">
               <li>
                 <a href="exploremummy.php">Some Words with a Mummy</a>
