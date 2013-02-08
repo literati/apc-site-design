@@ -98,13 +98,13 @@
                 <li>Title</li>
                 <ul><li>A Tale of the Ragged Mountains</li></ul>
                 <li>Description</li>
-                <ul><li>"A Tale of the Ragged Mountains" is a short story written by Edgar Allan Poe partially based on his experiences while a student at the University of Virginia. Set near Charlottesville, it is the only one of Poe's stories to take place in Virginia. It was first published in Godey's Lady's Book in 1844 and was included in Poe's short story collection Tales, published in New York by Wiley and Putnam in 1845.</li></ul>
+                <ul><li>"A Tale of the Ragged Mountains" is a tale by Edgar Allan Poe partially based on his experiences while a student at the University of Virginia. Set near Charlottesville, it is the only Poe tale to take place in Virginia. It was first published in April 1844 in Godey's Lady's Book and was later included in Poe's 1845 collection Tales, published in New York by Wiley and Putnam.</li></ul>
                 <li>Creator</li>
                 <ul><li>Edgar Allan Poe</li></ul>
                 <li>Publisher</li>
                 <ul><li>Louis Antoine Godey</li></ul>
                 <li>Date</li>
-                <ul><li>1844</li></ul>
+                <ul><li>April 1844</li></ul>
                 <li>Language</li>
                 <ul><li>English</li></ul>
                 <li>Type</li>

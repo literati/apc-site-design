@@ -98,7 +98,7 @@
                 <li>Title</li>
                 <ul><li>Some Words with A Mummy</li></ul>
                 <li>Description</li>
-                <ul><li>"Some Words with a Mummy" is a short story by Edgar Allan Poe. It was first published in American Review: A Whig Journal in April 1845. It is a satire and criticism of the popularity of mummies and science that was occurring at the time.</li></ul>
+                <ul><li>"Some Words with a Mummy" is a tale by Edgar Allan Poe. It was first published in American Review: A Whig Journal in April 1845. It is a satire and criticism of the antebellum fascination with Egyptology, science, and American exceptionalism.</li></ul>
                 <li>Creator</li>
                 <ul><li>Edgar Allan Poe</li></ul>
                 <li>Publisher</li>

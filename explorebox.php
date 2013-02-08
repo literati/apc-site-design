@@ -98,13 +98,13 @@
                 <li>Title</li>
                 <ul><li>The Oblong Box</li></ul>
                 <li>Description</li>
-                <ul><li>"The Oblong Box" is a short story by Edgar Allan Poe, first published in 1844, about a sea voyage and a mysterious box.</li></ul>
+                <ul><li>"The Oblong Box" is a tale by Edgar Allan Poe.  First published in September 1844 in Godey’s Lady’s Book, it is a story about a sea voyage and a mysterious box.</li></ul>
                 <li>Creator</li>
                 <ul><li>Edgar Allan Poe</li></ul>
                 <li>Publisher</li>
                 <ul><li>Godey's Magazine and Lady's Book</li></ul>
                 <li>Date</li>
-                <ul><li>1844</li></ul>
+                <ul><li>September 1844</li></ul>
                 <li>Language</li>
                 <ul><li>English</li></ul>
                 <li>Type</li>
