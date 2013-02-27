@@ -84,7 +84,7 @@
           <?php include "stories/mummy.txt"; ?></div>
       </div>
 
-      <!-- Meta Information -->
+      <!-- Meta Info -->
       <div class="six columns metainfo">
 
         <!-- Document Overview -->
@@ -138,15 +138,17 @@
           </li>
         </ul>
 
-      </div>
+      </div> 
+      <!-- END Meta Info-->
 
-    </div>
+    </div> 
+    <!-- END One Big Row -->
 
     <!-- BEGIN Story Navigation -->
     <div class="row storynav">
       <div class="twelve columns">
         <?php include "components/storynav.php"; ?></div>
-    </div>
+    </div> 
     <!-- END Story Navigation -->
 
     <div class="bottomImg"></div>
